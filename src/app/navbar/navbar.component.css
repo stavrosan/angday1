@@ -1,0 +1,59 @@
+.navbar {
+    z-index: 4;
+    width: 100%;
+    transition: all 1s;
+}
+.navbar-scrolled{
+    background-color: #c7d3ddc0;
+    height: auto;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration-line: none;
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-link::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    height: 2px;
+    background-color: #f97b81;
+    top: 100%;
+    transition: 0.8s;
+  }
+  
+  .nav-link:hover::before {
+    background-color: #f97b81;
+    width: calc(100% + 1px);
+    height: 5%;
+    transform: rotate(0deg);
+  }
+
+
+.title{
+    font-size: clamp(15px, 5vw, 30px);
+    font-weight: bold;
+    font-family: "Bodoni Moda", serif;
+    background-clip: content-box;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, 
+    #52c6f0, #4f0ab7); 
+            -webkit-text-fill-color:transparent; 
+            -webkit-background-clip: text;
+    
+}
+
+.nav-link{
+    font-family: "Playfair Display", serif;
+    font-size: clamp(10px, 5vw, 25px);
+    font-weight: bold;
+}
+ 
+
+

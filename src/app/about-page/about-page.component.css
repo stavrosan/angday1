@@ -1,0 +1,91 @@
+h2{
+    font-family: "Playfair Display", serif;
+    margin: 20px;
+}
+
+h3{
+    font-family: "Playfair Display", serif;
+}
+
+.about{
+    padding: 100px 10% 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 30px;
+}
+
+.about-img img{
+   max-width: 600px;
+   height: auto;
+   width: 100%;
+}
+
+.about-info p{
+    letter-spacing: 1px;
+}
+
+.img{
+    background-position: cover;
+    background-repeat: no-repeat;
+    margin: 100px;
+    width: 100%;
+    height: auto;
+}
+
+.services{
+    padding: 20px 10% 40px;
+    background-color: #f97b81;
+}
+
+.services .heading{
+    text-align: center;
+}
+
+.services .card-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.services .card-content .row{
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 100%;
+    padding: 10px;
+}
+
+
+.services .row i{
+    color: aliceblue;
+    font-size: 50px;
+    padding: 10px;
+    display: block;
+}
+
+@media (max-width:920px) {
+    .services .card-content{
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+
+    .about{
+        grid-template-columns: 1fr;
+    }
+
+    .about-img{
+        text-align: center;
+        order: 2;
+    }
+
+    .about-img img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+} 
